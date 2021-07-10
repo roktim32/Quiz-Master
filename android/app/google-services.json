@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "385800448362",
+    "project_id": "fireship-lessons-45639",
+    "storage_bucket": "fireship-lessons-45639.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:385800448362:android:500aeddfdf3b4324b65d13",
+        "android_client_info": {
+          "package_name": "io.fireship.demoquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "385800448362-2iak9gj3f22ih40rpt3dqnkqne77t32s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnMTDDomE202e0tegb-FBfZUnOQUT5owg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "385800448362-2iak9gj3f22ih40rpt3dqnkqne77t32s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:385800448362:android:61e630557edae9fbb65d13",
+        "android_client_info": {
+          "package_name": "io.fireship.rokquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "385800448362-u0ro06mkgr374bdmu9rtcfodtlds50r6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.fireship.rokquiz",
+            "certificate_hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+          }
+        },
+        {
+          "client_id": "385800448362-2iak9gj3f22ih40rpt3dqnkqne77t32s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnMTDDomE202e0tegb-FBfZUnOQUT5owg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "385800448362-2iak9gj3f22ih40rpt3dqnkqne77t32s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
