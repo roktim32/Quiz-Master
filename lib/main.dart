@@ -10,6 +10,9 @@ class MyApp extends StatelessWidget {
     // Platform.
     return MaterialApp(
       home: Scaffold(
+        appBar: AppBar(
+          title: Text("Quiz App"),
+        ),
         body: Center(
           child: Container(
             width: 100,
