@@ -4,67 +4,44 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'dart:io' show Platform;
 
+import 'package:quizapp/home.dart';
+
 void main() => runApp(MyApp());
 
-class MyApp extends StatefulWidget {
-  @override
-  _MyAppState createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    ScrollController _controller = ScrollController();
-    // Platform.
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Center(child: CoolBox()),
-      ),
+      routes: {
+        '/home': (context) => HomeScreen(),
+        '/home2': (context) => HomeScreen2(),
+      },
+      home: HomeScreen(),
     );
   }
 }
 
-class CoolBox extends StatefulWidget {
-  const CoolBox({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  _CoolBoxState createState() => _CoolBoxState();
-}
-
-class _CoolBoxState extends State<CoolBox> {
-  double width = 100;
-  double height = 100;
-  Color color = Colors.green;
-
+class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return AnimatedContainer(
-      duration: Duration(
-        seconds: 1,
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Home"),
       ),
-      curve: Curves.elasticInOut,
-      color: color,
-      width: width,
-      height: height,
-      child: TextButton(
-        child: Text(
-          'Random',
-          style: TextStyle(color: Colors.black),
-        ),
-        onPressed: () {
-          setState(() {
-            width = Random().nextDouble() * 500;
-            height = Random().nextDouble() * 500;
+      body: Center(
+        child: ElevatedButton(
+          child: Text("Go"),
+          onPressed: () {
+            // Navigator.push(
+            //   context,
+            //   MaterialPageRoute(
+            //     builder: (context) => HomeScreen(),
+            //   ),
+            // );
 
-            int r = Random().nextInt(255);
-            int b = Random().nextInt(255);
-            int g = Random().nextInt(255);
-            color = Color.fromRGBO(r, g, b, 1);
-          });
-        },
+             
+          },
+        ),
       ),
     );
   }
